@@ -1,0 +1,46 @@
+## --- Visual Studio & Build (Bắt buộc phải bỏ) ---
+# Thư mục chứa file biên dịch (được tạo lại khi bấm Start)
+[Bb]in
+[Oo]bj
+
+# File cấu hình riêng của máy bạn (người khác không cần)
+.vs
+.user
+.userosscache
+.sln.docstates
+.suo
+
+## --- Database (SQL Server) ---
+# Không nên up file dữ liệu cứng lên git (trừ khi là file mẫu nhỏ)
+.mdf
+.ldf
+.ndf
+
+## --- File tạm & Log ---
+.log
+.tmp
+.bak
+.cache
+Thumbs.db
+
+## --- Thư viện (NuGet Packages) ---
+# Các thư viện sẽ tự tải lại khi Restore, không cần up lên
+packages
+
+## --- [QUAN TRỌNG] DỰ ÁN CỦA BẠN ---
+
+# 1. Bỏ qua thư mục chứa hóa đơn Excel xuất ra
+# (Vì đây là dữ liệu sinh ra khi chạy, không phải Source Code)
+HoaDonExcel
+
+# 2. Bỏ qua các file Excel tạm nếu lỡ lưu ra ngoài
+.xlsx
+.xls
+
+# 3. Giữ lại file Excel nếu đó là file mẫu (Template)
+# (Nếu bạn có file mẫu, hãy bỏ dấu # ở dòng dưới)
+# !Template.xlsx
+
+## --- Cấu hình nhạy cảm (Tùy chọn) ---
+# Nếu App.config chứa mật khẩu thật, hãy cân nhắc bỏ qua nó
+# App.config
